@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-        // создаем и настраиваем ТабБар
+        // создаем и настраиваем ТабБар на root controller
         let tabBarController = TabBarController()
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
