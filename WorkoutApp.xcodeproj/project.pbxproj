@@ -22,6 +22,8 @@
 		35984C7629FB856F006DF10E /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35984C7529FB856F006DF10E /* ProgressController.swift */; };
 		35984C7829FB8584006DF10E /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35984C7729FB8584006DF10E /* SettingsController.swift */; };
 		35E2C8382A0208CB00700854 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2C8372A0208CB00700854 /* SecondaryButton.swift */; };
+		35E2C83A2A021C2E00700854 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2C8392A021C2E00700854 /* OverviewNavBar.swift */; };
+		35E2C83C2A021C8200700854 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2C83B2A021C8200700854 /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		35984C7529FB856F006DF10E /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		35984C7729FB8584006DF10E /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		35E2C8372A0208CB00700854 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		35E2C8392A021C2E00700854 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
+		35E2C83B2A021C8200700854 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 				35984C5F29FA5432006DF10E /* TabBarController.swift */,
 				35984C6729FB7078006DF10E /* NavBarController.swift */,
 				35984C6A29FB80C3006DF10E /* BaseController.swift */,
+				35E2C83B2A021C8200700854 /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				35E2C8372A0208CB00700854 /* SecondaryButton.swift */,
+				35E2C8392A021C2E00700854 /* OverviewNavBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 			files = (
 				35984C4E29FA4FE0006DF10E /* OverviewController.swift in Sources */,
 				35984C6329FA567D006DF10E /* UIColor+Extension.swift in Sources */,
+				35E2C83A2A021C2E00700854 /* OverviewNavBar.swift in Sources */,
 				35984C6029FA5432006DF10E /* TabBarController.swift in Sources */,
 				35984C6D29FB82BC006DF10E /* UIView+Extension.swift in Sources */,
 				35984C7429FB8559006DF10E /* SessionController.swift in Sources */,
@@ -263,6 +270,7 @@
 				35984C6829FB7078006DF10E /* NavBarController.swift in Sources */,
 				35984C6629FA5F42006DF10E /* Resources.swift in Sources */,
 				35984C4A29FA4FE0006DF10E /* AppDelegate.swift in Sources */,
+				35E2C83C2A021C8200700854 /* BaseView.swift in Sources */,
 				35984C6B29FB80C3006DF10E /* BaseController.swift in Sources */,
 				35984C4C29FA4FE0006DF10E /* SceneDelegate.swift in Sources */,
 			);
