@@ -21,10 +21,14 @@ enum Resources {
     
     enum Strings {
         enum TabBar {
-            static let overview = "Overview"
-            static let session = "Session"
-            static let progress = "Progress"
-            static let settings = "Settings"
+            static func title(for tab: Tabs) -> String {
+                switch tab {
+                case .overview: return "Overview"
+                case .session: return "Session"
+                case .progress: return "Progress"
+                case .settings: return "Settings"
+                }
+            }
         }
         
         enum NavBar {
@@ -50,10 +54,14 @@ enum Resources {
     
     enum Images {
         enum TabBar {
-            static let overview = UIImage(systemName: "house")
-            static let session = UIImage(systemName: "chart.bar")
-            static let progress = UIImage(systemName: "stopwatch")
-            static let settings = UIImage(systemName: "gearshape")
+            static func icon(for tab: Tabs) -> UIImage? {
+                switch tab {
+                case .overview: return UIImage(systemName: "house")
+                case .session: return UIImage(systemName: "chart.bar")
+                case .progress: return UIImage(systemName: "stopwatch")
+                case .settings: return UIImage(systemName: "gearshape")
+                }
+            }
         }
         enum Common {
             static let downArrow = UIImage(systemName: "arrowtriangle.down")

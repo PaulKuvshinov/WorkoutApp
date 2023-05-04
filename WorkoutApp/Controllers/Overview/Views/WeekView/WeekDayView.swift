@@ -34,16 +34,16 @@ extension WeekView {
 
 extension WeekView.WeekdayView {
     
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         
         addView(stackView)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(dateLabel )
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
@@ -51,8 +51,8 @@ extension WeekView.WeekdayView {
         ])
     }
     
-    override func configureView() {
-        super.configureView()
+    override func configureViews() {
+        super.configureViews()
      
         backgroundColor = .red
         

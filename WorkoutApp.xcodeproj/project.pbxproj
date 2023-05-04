@@ -27,6 +27,7 @@
 		35E2C83F2A035BB400700854 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2C83E2A035BB400700854 /* WeekView.swift */; };
 		35E2C8412A035E4C00700854 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2C8402A035E4C00700854 /* WeekDayView.swift */; };
 		35E2C8432A036BE000700854 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2C8422A036BE000700854 /* Date+Extension.swift */; };
+		35E2C8462A037B0900700854 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2C8452A037B0900700854 /* BaseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		35E2C83E2A035BB400700854 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		35E2C8402A035E4C00700854 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
 		35E2C8422A036BE000700854 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		35E2C8452A037B0900700854 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +147,10 @@
 		35984C6E29FB84C4006DF10E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				35E2C8442A037AE200700854 /* Views */,
 				35984C5F29FA5432006DF10E /* TabBarController.swift */,
 				35984C6729FB7078006DF10E /* NavBarController.swift */,
 				35984C6A29FB80C3006DF10E /* BaseController.swift */,
-				35E2C83B2A021C8200700854 /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -203,6 +205,15 @@
 				35E2C8402A035E4C00700854 /* WeekDayView.swift */,
 			);
 			path = WeekView;
+			sourceTree = "<group>";
+		};
+		35E2C8442A037AE200700854 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35E2C83B2A021C8200700854 /* BaseView.swift */,
+				35E2C8452A037B0900700854 /* BaseInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 				35984C7429FB8559006DF10E /* SessionController.swift in Sources */,
 				35984C7629FB856F006DF10E /* ProgressController.swift in Sources */,
 				35E2C8382A0208CB00700854 /* SecondaryButton.swift in Sources */,
+				35E2C8462A037B0900700854 /* BaseInfoView.swift in Sources */,
 				35984C7829FB8584006DF10E /* SettingsController.swift in Sources */,
 				35984C6829FB7078006DF10E /* NavBarController.swift in Sources */,
 				35984C6629FA5F42006DF10E /* Resources.swift in Sources */,
