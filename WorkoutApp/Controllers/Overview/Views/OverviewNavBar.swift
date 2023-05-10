@@ -9,9 +9,26 @@ import UIKit
 
 final class OverviewNavBar: BaseView {
     
-    private let titleLabel = UILabel()
-    private let allWorkoutsButton = SecondaryButton()
-    private let addButton = UIButton()
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = Resources.Strings.NavBar.overview
+        label.textColor = Resources.Colors.titleGrey
+        label.font = Resources.Fonts.helveticaRegular(with: 22 )
+        return label
+    }()
+    
+    private let allWorkoutsButton: WAButton = {
+        let button = WAButton(with: .secondary)
+        button.setTitle(Resources.Strings.Overview.allWorkoutsButton)
+        return button
+    }()
+    
+    private let addButton: UIButton = {
+        let button = UIButton()
+        button.setImage(Resources.Images.Common.downArrow, for: .normal)
+        return button
+    }()
+    
     private let weekView = WeekView()
     
     override func layoutSubviews() {
@@ -54,7 +71,6 @@ extension OverviewNavBar {
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
             allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
             
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
