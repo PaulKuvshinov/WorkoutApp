@@ -22,10 +22,15 @@ final class TabBarController: UITabBarController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         configureViews()
+        switchTo(tab: .session)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func switchTo(tab: Tabs) {
+        selectedIndex = tab.rawValue
     }
     
     // настройка ТабБара
