@@ -8,11 +8,10 @@
 import UIKit
 
 class SessionController: BaseController {
-    private var timerView: TimerView = {
-        let view = TimerView()
-        
-        return view
-    }()
+    
+    private let timerView = TimerView()
+    
+    private let timerDuration = 0.0
 }
 
 extension SessionController {
@@ -42,5 +41,7 @@ extension SessionController {
         // размещаем кнопки на Вью
         addNavBarButton(at: .left, with: Resources.Strings.Session.navBarLeft)
         addNavBarButton(at: .right, with: Resources.Strings.Session.navBarRight)
+        
+        timerView.configure(with: timerDuration, progress: 1.5)
     }
 }
