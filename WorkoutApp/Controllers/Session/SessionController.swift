@@ -11,7 +11,17 @@ class SessionController: BaseController {
     
     private let timerView = TimerView()
     
-    private let timerDuration = 0.0
+    private let timerDuration = 3.0
+    
+    override func navBarLeftButtonHandler() {
+        
+        timerView.startTimer()
+    }
+    
+    override func navBarRightButtonHandler() {
+        
+        timerView.stopTimer()
+    }
 }
 
 extension SessionController {
@@ -42,6 +52,6 @@ extension SessionController {
         addNavBarButton(at: .left, with: Resources.Strings.Session.navBarLeft)
         addNavBarButton(at: .right, with: Resources.Strings.Session.navBarRight)
         
-        timerView.configure(with: timerDuration, progress: 1.5)
+        timerView.configure(with: timerDuration, progress: 0)
     }
 }

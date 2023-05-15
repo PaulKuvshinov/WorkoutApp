@@ -43,8 +43,10 @@ extension TimerView {
             circleLayer.lineCap = .round
             
             let dotAngle = CGFloat.pi * (7 / 6 - (8 / 6 * percent))
+            
             let dotPoint = CGPoint(x: cos(-dotAngle) * radius + center.x,
                                    y: sin(-dotAngle) * radius + center.y)
+            
             let dotPath = UIBezierPath()
             dotPath.move(to: dotPoint)
             dotPath.addLine(to: dotPoint)

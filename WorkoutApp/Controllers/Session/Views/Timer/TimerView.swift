@@ -27,6 +27,33 @@ final class TimerView: WABaseInfoView {
         
         progressView.drawProgress(with: CGFloat(percent))
     }
+    
+    func startTimer() {
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01,
+                      repeats: true,
+                      block: { [weak self] timer in
+            guard let self = self else { return }
+            self.timerProgress += 0.01
+            
+            if self.timerProgress > self.timerDuration {
+                self.timerProgress = self.timerDuration
+                timer.invalidate()
+            }
+            
+            self.configure(with: self.timerDuration, progress: self.timerProgress)
+        })
+    }
+    
+    func pauseTimer() {
+        
+        
+    }
+    
+    func stopTimer() {
+        
+        
+    }
 }
 
 extension TimerView {
