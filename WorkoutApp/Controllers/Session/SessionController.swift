@@ -23,7 +23,7 @@ class SessionController: BaseController {
         
         timerView.state = timerView.state == .isRunning ? .isStopped : .isRunning
         setNavBarButtonTitle(
-            timerView.state == .isRunning ? Resources.Strings.Session.navBarStart : Resources.Strings.Session.navBarFinish,
+            timerView.state == .isRunning ? Resources.Strings.Session.navBarStart : Resources.Strings.Session.navBarPause,
             at: .left)
     }
     
@@ -49,8 +49,7 @@ extension SessionController {
         NSLayoutConstraint.activate([
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
-            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            timerView.heightAnchor.constraint(equalToConstant: 500)
+            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15)
         ])
     }
     
