@@ -8,7 +8,7 @@
 import UIKit
 
 extension WeekView {
-    final class WeekdayView: BaseView {
+    final class WeekdayView: WABaseView {
         
         private var nameLabel = UILabel()
         private var dateLabel = UILabel()

@@ -85,6 +85,7 @@ extension TimerView {
             
             var angle: CGFloat = 7 / 6
             (1...9).forEach { _ in
+                
                 let barAngle = CGFloat.pi * angle
                 let startBarPoint = CGPoint(x: cos(-barAngle) * startBarRadius + center.x,
                                             y: sin(-barAngle) * startBarRadius + center.y)
