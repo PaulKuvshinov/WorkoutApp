@@ -31,6 +31,8 @@
 		35E2C8462A037B0900700854 /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2C8452A037B0900700854 /* WABaseInfoView.swift */; };
 		35F352952A0B7BE0001B55CB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F352942A0B7BE0001B55CB /* TimerView.swift */; };
 		35F352982A0B7CFB001B55CB /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F352972A0B7CFB001B55CB /* ProgressView.swift */; };
+		35F8AF3A2A209791008309C7 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF392A209791008309C7 /* StatsView.swift */; };
+		35F8AF3D2A2097DE008309C7 /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF3C2A2097DE008309C7 /* StatsItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		35E2C8452A037B0900700854 /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		35F352942A0B7BE0001B55CB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		35F352972A0B7CFB001B55CB /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		35F8AF392A209791008309C7 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		35F8AF3C2A2097DE008309C7 /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				35F352962A0B7CEB001B55CB /* Timer */,
+				35F8AF372A209387008309C7 /* Stats */,
+				35F8AF382A20938E008309C7 /* Steps */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +245,30 @@
 				357B5CB82A15E3DF0025350D /* PercentView.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		35F8AF372A209387008309C7 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				35F8AF3B2A2097C2008309C7 /* Views */,
+				35F8AF392A209791008309C7 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		35F8AF382A20938E008309C7 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		35F8AF3B2A2097C2008309C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35F8AF3C2A2097DE008309C7 /* StatsItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,11 +356,13 @@
 				35F352982A0B7CFB001B55CB /* ProgressView.swift in Sources */,
 				35984C7829FB8584006DF10E /* SettingsController.swift in Sources */,
 				35984C6829FB7078006DF10E /* NavBarController.swift in Sources */,
+				35F8AF3D2A2097DE008309C7 /* StatsItemView.swift in Sources */,
 				35984C6629FA5F42006DF10E /* Resources.swift in Sources */,
 				35984C4A29FA4FE0006DF10E /* AppDelegate.swift in Sources */,
 				35E2C83C2A021C8200700854 /* WABaseView.swift in Sources */,
 				35E2C8412A035E4C00700854 /* WeekDayView.swift in Sources */,
 				35984C6B29FB80C3006DF10E /* BaseController.swift in Sources */,
+				35F8AF3A2A209791008309C7 /* StatsView.swift in Sources */,
 				35984C4C29FA4FE0006DF10E /* SceneDelegate.swift in Sources */,
 				35E2C8432A036BE000700854 /* Date+Extension.swift in Sources */,
 			);
