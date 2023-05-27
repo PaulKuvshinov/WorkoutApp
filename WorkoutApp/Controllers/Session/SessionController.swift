@@ -59,7 +59,6 @@ extension SessionController {
             statsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             statsView.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: 10),
             statsView.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -7.5),
-            statsView.heightAnchor.constraint(equalToConstant: 200),
             
             stepsView.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: 7.5),
             stepsView.topAnchor.constraint(equalTo: statsView.topAnchor),
@@ -86,5 +85,10 @@ extension SessionController {
                 self?.navBarRightButtonHandler()
             }
         }
+        
+        statsView.configure(with: [.heartRate(value: "155"),
+                                   .averagePace(value: "8'20''"),
+                                   .totalSteps(value: "7.682"),
+                                   .totalDistance(value: "8.25")])
     }
 }

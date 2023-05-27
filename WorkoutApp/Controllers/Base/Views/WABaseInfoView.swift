@@ -18,7 +18,7 @@ class WABaseInfoView: WABaseView {
     
     private let button = WAButton(with: .primary)
     
-    private let contenView: UIView = {
+    let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = Resources.Colors.separator.cgColor
@@ -52,7 +52,7 @@ extension WABaseInfoView {
     override func setupViews() {
         super.setupViews()
         addView(titleLabel)
-        addView(contenView)
+        addView(contentView)
         addView(button)
     }
     
@@ -71,10 +71,10 @@ extension WABaseInfoView {
             button.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
             button.heightAnchor.constraint(equalToConstant: 28),
             
-            contenView.topAnchor.constraint(equalTo: contentTopAnchor, constant: contentTopOffset),
-            contenView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            contenView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            contenView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            contentView.topAnchor.constraint(equalTo: contentTopAnchor, constant: contentTopOffset),
+            contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            contentView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
     
