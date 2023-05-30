@@ -15,14 +15,14 @@ enum Tabs: Int, CaseIterable {
     case settings
 }
 
-final class TabBarController: UITabBarController {
+final class WATabBarController: UITabBarController {
     
     // запускаем через nib (также можно через viewDidLoad
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         configureViews()
-        switchTo(tab: .session)
+        switchTo(tab: .progress)
     }
     
     required init?(coder: NSCoder) {
@@ -43,8 +43,8 @@ final class TabBarController: UITabBarController {
         tabBar.layer.masksToBounds = true
         
         // создаем контроллеры и нав контроллеры для дальнейших переходов
-        let controllers: [NavBarController] = Tabs.allCases.map { tab in
-            let controller = NavBarController(rootViewController: getController(for: tab))
+        let controllers: [WANavBarController] = Tabs.allCases.map { tab in
+            let controller = WANavBarController(rootViewController: getController(for: tab))
             controller.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.title(for: tab),
                                                  image: Resources.Images.TabBar.icon(for: tab),
                                                  tag: tab.rawValue)
@@ -56,7 +56,7 @@ final class TabBarController: UITabBarController {
                            animated: false)
     }
     
-    private func getController(for tab: Tabs) -> BaseController {
+    private func getController(for tab: Tabs) -> WABaseController {
         switch tab {
         case .overview: return OverviewController()
         case .progress: return ProgressController()

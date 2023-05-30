@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class NavBarController: UINavigationController {
+final class WANavBarController: UINavigationController {
     
     
     override func viewDidLoad() {

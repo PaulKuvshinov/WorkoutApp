@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SessionController: BaseController {
+class SessionController: WABaseController {
     
     private let timerView = TimerView()
     
