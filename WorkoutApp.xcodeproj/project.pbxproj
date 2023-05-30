@@ -33,6 +33,9 @@
 		35F352982A0B7CFB001B55CB /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F352972A0B7CFB001B55CB /* ProgressView.swift */; };
 		35F8AF3A2A209791008309C7 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF392A209791008309C7 /* StatsView.swift */; };
 		35F8AF3D2A2097DE008309C7 /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF3C2A2097DE008309C7 /* StatsItemView.swift */; };
+		35F8AF3F2A25B107008309C7 /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF3E2A25B107008309C7 /* StepsView.swift */; };
+		35F8AF422A25B385008309C7 /* WABarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF412A25B385008309C7 /* WABarsView.swift */; };
+		35F8AF452A25B3E2008309C7 /* WABarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF442A25B3E2008309C7 /* WABarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		35F352972A0B7CFB001B55CB /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		35F8AF392A209791008309C7 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		35F8AF3C2A2097DE008309C7 /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
+		35F8AF3E2A25B107008309C7 /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		35F8AF412A25B385008309C7 /* WABarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarsView.swift; sourceTree = "<group>"; };
+		35F8AF442A25B3E2008309C7 /* WABarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,7 @@
 		35E2C8442A037AE200700854 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				35F8AF402A25B375008309C7 /* WABarsView */,
 				35E2C83B2A021C8200700854 /* WABaseView.swift */,
 				35E2C8452A037B0900700854 /* WABaseInfoView.swift */,
 			);
@@ -259,6 +266,7 @@
 		35F8AF382A20938E008309C7 /* Steps */ = {
 			isa = PBXGroup;
 			children = (
+				35F8AF3E2A25B107008309C7 /* StepsView.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -267,6 +275,23 @@
 			isa = PBXGroup;
 			children = (
 				35F8AF3C2A2097DE008309C7 /* StatsItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35F8AF402A25B375008309C7 /* WABarsView */ = {
+			isa = PBXGroup;
+			children = (
+				35F8AF432A25B3D4008309C7 /* Views */,
+				35F8AF412A25B385008309C7 /* WABarsView.swift */,
+			);
+			path = WABarsView;
+			sourceTree = "<group>";
+		};
+		35F8AF432A25B3D4008309C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35F8AF442A25B3E2008309C7 /* WABarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -348,12 +373,14 @@
 				35984C6029FA5432006DF10E /* TabBarController.swift in Sources */,
 				35984C6D29FB82BC006DF10E /* UIView+Extension.swift in Sources */,
 				35984C7429FB8559006DF10E /* SessionController.swift in Sources */,
+				35F8AF452A25B3E2008309C7 /* WABarView.swift in Sources */,
 				35984C7629FB856F006DF10E /* ProgressController.swift in Sources */,
 				357B5CB92A15E3DF0025350D /* PercentView.swift in Sources */,
 				35E2C8382A0208CB00700854 /* WAButton.swift in Sources */,
 				35E2C8462A037B0900700854 /* WABaseInfoView.swift in Sources */,
 				35F352952A0B7BE0001B55CB /* TimerView.swift in Sources */,
 				35F352982A0B7CFB001B55CB /* ProgressView.swift in Sources */,
+				35F8AF3F2A25B107008309C7 /* StepsView.swift in Sources */,
 				35984C7829FB8584006DF10E /* SettingsController.swift in Sources */,
 				35984C6829FB7078006DF10E /* NavBarController.swift in Sources */,
 				35F8AF3D2A2097DE008309C7 /* StatsItemView.swift in Sources */,
@@ -362,6 +389,7 @@
 				35E2C83C2A021C8200700854 /* WABaseView.swift in Sources */,
 				35E2C8412A035E4C00700854 /* WeekDayView.swift in Sources */,
 				35984C6B29FB80C3006DF10E /* BaseController.swift in Sources */,
+				35F8AF422A25B385008309C7 /* WABarsView.swift in Sources */,
 				35F8AF3A2A209791008309C7 /* StatsView.swift in Sources */,
 				35984C4C29FA4FE0006DF10E /* SceneDelegate.swift in Sources */,
 				35E2C8432A036BE000700854 /* Date+Extension.swift in Sources */,
