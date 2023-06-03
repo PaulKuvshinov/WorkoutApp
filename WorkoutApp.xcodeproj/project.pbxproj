@@ -41,6 +41,7 @@
 		35F8AF502A299C36008309C7 /* WAChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF4F2A299C36008309C7 /* WAChartsView.swift */; };
 		35F8AF522A29A16E008309C7 /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF512A29A16E008309C7 /* YAxisView.swift */; };
 		35F8AF542A29A4FB008309C7 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF532A29A4FB008309C7 /* XAxisView.swift */; };
+		35F8AF562A2AE414008309C7 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF552A2AE414008309C7 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		35F8AF4F2A299C36008309C7 /* WAChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAChartsView.swift; sourceTree = "<group>"; };
 		35F8AF512A29A16E008309C7 /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
 		35F8AF532A29A4FB008309C7 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
+		35F8AF552A2AE414008309C7 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,8 +338,8 @@
 		35F8AF4D2A299BF3008309C7 /* WAChartsView */ = {
 			isa = PBXGroup;
 			children = (
-				35F8AF4F2A299C36008309C7 /* WAChartsView.swift */,
 				35F8AF4E2A299C27008309C7 /* Views */,
+				35F8AF4F2A299C36008309C7 /* WAChartsView.swift */,
 			);
 			path = WAChartsView;
 			sourceTree = "<group>";
@@ -347,6 +349,7 @@
 			children = (
 				35F8AF512A29A16E008309C7 /* YAxisView.swift */,
 				35F8AF532A29A4FB008309C7 /* XAxisView.swift */,
+				35F8AF552A2AE414008309C7 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				35E2C8412A035E4C00700854 /* WeekDayView.swift in Sources */,
 				35984C6B29FB80C3006DF10E /* WABaseController.swift in Sources */,
 				35F8AF422A25B385008309C7 /* WABarsView.swift in Sources */,
+				35F8AF562A2AE414008309C7 /* ChartView.swift in Sources */,
 				35F8AF3A2A209791008309C7 /* StatsView.swift in Sources */,
 				35984C4C29FA4FE0006DF10E /* SceneDelegate.swift in Sources */,
 				35E2C8432A036BE000700854 /* Date+Extension.swift in Sources */,
