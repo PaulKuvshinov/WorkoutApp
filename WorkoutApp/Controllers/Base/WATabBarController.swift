@@ -22,7 +22,6 @@ final class WATabBarController: UITabBarController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         configureViews()
-        switchTo(tab: .progress)
     }
     
     required init?(coder: NSCoder) {
