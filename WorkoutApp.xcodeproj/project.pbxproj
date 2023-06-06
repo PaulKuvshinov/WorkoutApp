@@ -42,6 +42,7 @@
 		35F8AF522A29A16E008309C7 /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF512A29A16E008309C7 /* YAxisView.swift */; };
 		35F8AF542A29A4FB008309C7 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF532A29A4FB008309C7 /* XAxisView.swift */; };
 		35F8AF562A2AE414008309C7 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF552A2AE414008309C7 /* ChartView.swift */; };
+		35F8AF5A2A2F1C5C008309C7 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF592A2F1C5C008309C7 /* SectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		35F8AF512A29A16E008309C7 /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
 		35F8AF532A29A4FB008309C7 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		35F8AF552A2AE414008309C7 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		35F8AF592A2F1C5C008309C7 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 		35984C6F29FB84FE006DF10E /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				35F8AF572A2F1C40008309C7 /* CollectionView */,
 				35E2C8362A02088000700854 /* Views */,
 				35984C4D29FA4FE0006DF10E /* OverviewController.swift */,
 			);
@@ -354,6 +357,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		35F8AF572A2F1C40008309C7 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				35F8AF582A2F1C4A008309C7 /* Views */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		35F8AF582A2F1C4A008309C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35F8AF592A2F1C5C008309C7 /* SectionHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -451,6 +470,7 @@
 				35984C4A29FA4FE0006DF10E /* AppDelegate.swift in Sources */,
 				35E2C83C2A021C8200700854 /* WABaseView.swift in Sources */,
 				35E2C8412A035E4C00700854 /* WeekDayView.swift in Sources */,
+				35F8AF5A2A2F1C5C008309C7 /* SectionHeaderView.swift in Sources */,
 				35984C6B29FB80C3006DF10E /* WABaseController.swift in Sources */,
 				35F8AF422A25B385008309C7 /* WABarsView.swift in Sources */,
 				35F8AF562A2AE414008309C7 /* ChartView.swift in Sources */,

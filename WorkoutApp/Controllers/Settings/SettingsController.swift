@@ -12,6 +12,24 @@ class SettingsController: WABaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-        title = "Settings"
+        title = Resources.Strings.NavBar.settings
+    }
+}
+
+extension SettingsController {
+    override func setupViews() {
+        super.setupViews()
+
+    }
+
+    override func constraintViews() {
+        super.constraintViews()
+
+    }
+
+    override func configureViews() {
+        super.configureViews()
+
+        title = Resources.Strings.NavBar.settings
     }
 }

@@ -35,6 +35,7 @@ enum Resources {
             static let session = "High Intensity Cardio"
             static let progress = "Workout Progress"
             static let overview = "Today"
+            static let settings = "Settings"
         }
         
         enum Session {

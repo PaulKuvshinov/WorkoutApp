@@ -23,10 +23,11 @@ final class ChartView: WABaseView {
         return view
     }()
     
-    func configure(with data: [WAChartsView.Data]) {
+    func configure(with data: [WAChartsView.Data], topChartOffset: Int) {
 
         layoutIfNeeded()
-        addDashLines()
+        drawDashLines()
+        drawChart(with: data, topChartOffset: topChartOffset)
     }
 }
 
@@ -65,15 +66,15 @@ extension ChartView {
 
 private extension ChartView {
     
-    func addDashLines(with counts: Int? = nil) {
+    func drawDashLines(with counts: Int = 9) {
         
-        (0..<9).map { CGFloat($0) }.forEach {
+        (0..<counts).map { CGFloat($0) }.forEach {
             
-            addDashLine(at: bounds.height / 9 * $0)
+            drawDashLine(at: bounds.height / CGFloat(counts) * $0)
         }
     }
     
-    func addDashLine(at yPosition: CGFloat) {
+    func drawDashLine(at yPosition: CGFloat) {
         
         let startPoint = CGPoint(x: 0, y: yPosition)
         let endPoint = CGPoint(x: bounds.width, y: yPosition)
@@ -88,6 +89,56 @@ private extension ChartView {
         dashLayer.lineDashPattern = [6, 3]
         
         layer.addSublayer(dashLayer)
+    }
+    
+    func drawChart(with data: [WAChartsView.Data], topChartOffset: Int) {
+        
+        guard let maxValue = data.sorted(by: { $0.value > $1.value }).first?.value else { return }
+        
+        let valuePoints = data.enumerated().map { CGPoint(x: CGFloat($0), y: CGFloat($1.value)) }
+        
+        let chartHeight = bounds.height / CGFloat(maxValue + topChartOffset)
+        
+        let points = valuePoints.map {
+            
+            let x = bounds.width / CGFloat(valuePoints.count - 1) * $0.x
+            let y = bounds.height - $0.y * chartHeight
+            return CGPoint(x: x, y: y)
+        }
+        
+        let chartPath = UIBezierPath()
+        chartPath.move(to: points[0])
+        
+        points.forEach {
+            chartPath.addLine(to: $0)
+            drawChartDot(at: $0)
+        }
+        
+        let chartLayer = CAShapeLayer()
+        chartLayer.path = chartPath.cgPath
+        chartLayer.fillColor = UIColor.clear.cgColor
+        chartLayer.strokeColor = Resources.Colors.active.cgColor
+        chartLayer.lineWidth = 3
+        chartLayer.strokeEnd = 1
+        chartLayer.lineCap = .round
+        chartLayer.lineJoin = .round
+        
+        layer.addSublayer(chartLayer)
+    }
+    
+    func drawChartDot(at point: CGPoint) {
+        
+        let dotPath = UIBezierPath()
+        dotPath.move(to: point)
+        dotPath.addLine(to: point)
+        
+        let dotLayer = CAShapeLayer()
+        dotLayer.path = dotPath.cgPath
+        dotLayer.strokeColor = Resources.Colors.active.cgColor
+        dotLayer.lineCap = .round
+        dotLayer.lineWidth = 10
+        
+        layer.addSublayer(dotLayer)
     }
 }
 
