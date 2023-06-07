@@ -14,7 +14,7 @@ class SessionController: WABaseController {
     private let statsView = StatsView(with: Resources.Strings.Session.workoutStats)
     private let stepsView = StepsView(with: Resources.Strings.Session.stepsCounter)
     
-    private let timerDuration = 360.0
+    private let timerDuration = 60.0
     
     override func navBarLeftButtonHandler() {
         

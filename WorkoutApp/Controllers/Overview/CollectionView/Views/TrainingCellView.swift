@@ -60,6 +60,7 @@ final class TrainingCellView: UICollectionViewCell {
         
         let view = UIImageView()
         view.image = Resources.Images.Overview.checkmarkDone
+        view.layer.backgroundColor = Resources.Colors.active.cgColor
         return view
     }()
 
@@ -86,6 +87,9 @@ final class TrainingCellView: UICollectionViewCell {
         checkmarkNotDone.image = isDone ?
         Resources.Images.Overview.checkmarkDone :
         Resources.Images.Overview.checkmarkNotDone
+        
+        checkmarkNotDone.tintColor = isDone ?
+        Resources.Colors.active : Resources.Colors.inactive
         
         switch roundedType {
             
