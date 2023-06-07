@@ -89,6 +89,12 @@ enum Resources {
             static let plus = UIImage(systemName: "plus.circle.fill")
         }
         
+        enum Overview {
+            static let rightArrow = UIImage(systemName: "chevron.right")
+            static let checkmarkNotDone = UIImage(systemName: "circle")
+            static let checkmarkDone = UIImage(systemName: "checkmark.circle.fill")
+        }
+        
         enum Session {
             static let averagePaceIcon = UIImage(systemName: "speedometer")
             static let heartRateIcon = UIImage(systemName: "bolt.heart")

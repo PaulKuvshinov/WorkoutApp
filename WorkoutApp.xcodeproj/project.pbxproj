@@ -43,6 +43,7 @@
 		35F8AF542A29A4FB008309C7 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF532A29A4FB008309C7 /* XAxisView.swift */; };
 		35F8AF562A2AE414008309C7 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF552A2AE414008309C7 /* ChartView.swift */; };
 		35F8AF5A2A2F1C5C008309C7 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF592A2F1C5C008309C7 /* SectionHeaderView.swift */; };
+		35F8AF5C2A302E9D008309C7 /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8AF5B2A302E9D008309C7 /* TrainingCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		35F8AF532A29A4FB008309C7 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		35F8AF552A2AE414008309C7 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		35F8AF592A2F1C5C008309C7 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		35F8AF5B2A302E9D008309C7 /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				35F8AF592A2F1C5C008309C7 /* SectionHeaderView.swift */,
+				35F8AF5B2A302E9D008309C7 /* TrainingCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				35E2C83A2A021C2E00700854 /* OverviewNavBar.swift in Sources */,
 				35984C6029FA5432006DF10E /* WATabBarController.swift in Sources */,
 				35F8AF4C2A29985B008309C7 /* MonthlyPerformanceView.swift in Sources */,
+				35F8AF5C2A302E9D008309C7 /* TrainingCellView.swift in Sources */,
 				35984C6D29FB82BC006DF10E /* UIView+Extension.swift in Sources */,
 				35984C7429FB8559006DF10E /* SessionController.swift in Sources */,
 				35F8AF452A25B3E2008309C7 /* WABarView.swift in Sources */,
